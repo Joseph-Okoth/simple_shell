@@ -1,44 +1,57 @@
 #include "shell.h"
+#include <signal.h>
+/**
+* sig_handler - checks if Ctrl C is pressed
+* @sig_num: int
+*/
+void sig_handler(int sig_num)
+{
+if (sig_num == SIGINT)
+write(1, "\n$ ", 3);
+}
+
 
 /**
- * main - entry point
- * @ac: arg count
- * @av: arg vector
- *
- * Return: 0 on success, 1 on error
- */
-int main(int ac, char **av)
+*main - main program for the shell project
+*
+*Return: 0
+*/
+int main(void)
 {
-	info_t info[] = { INFO_INIT };
-	int fd = 2;
+int bufsize = BUFFER_LEN, i;
+char **argvv;
+char *line;
+struct stat sfile;
 
-	asm ("mov %1, %0\n\t"
-		"add $3, %0"
-		: "=r" (fd)
-		: "r" (fd));
+signal(SIGINT, sig_handler);
+while (1)
+{
+if (isatty(STDIN_FILENO) == 1)
+write(STDOUT_FILENO, "$ ", 2);
 
-	if (ac == 2)
-	{
-		fd = open(av[1], O_RDONLY);
-		if (fd == -1)
-		{
-			if (errno == EACCES)
-				exit(126);
-			if (errno == ENOENT)
-			{
-				_eputs(av[0]);
-				_eputs(": 0: Can't open ");
-				_eputs(av[1]);
-				_eputchar('\n');
-				_eputchar(BUF_FLUSH);
-				exit(127);
-			}
-			return (EXIT_FAILURE);
-		}
-		info->readfd = fd;
-	}
-	populate_env_list(info);
-	read_history(info);
-	hsh(info, av);
-	return (EXIT_SUCCESS);
+line = read_line();
+
+argvv = split_line(line, bufsize);
+if (!argvv || argvv[0] == NULL)
+{
+exec_command(argvv);
+}
+else
+{
+i = check_builtin(argvv[0]);
+if (i >= 0)
+builtins(argvv, i);
+else
+{
+if (stat(argvv[0], &sfile) != 0)
+{
+argvv[0] = find_path(argvv[0]);
+}
+
+exec_command(argvv);
+}
+}
+free(argvv);
+}
+return (0);
 }

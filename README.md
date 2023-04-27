@@ -59,7 +59,7 @@ Installed gcc (GNU Compiler Collection) version 4.8.4 or newer.
 ## Getting it started
 ### Clone repo using HTTPS
 ```
-$ git clone https://github.com/mikemuturi/simple_shell.git
+$ git clone https://github.com/jonyach/simple_shell.git
 ```
 
 ### Compilation
@@ -79,8 +79,8 @@ $
 ```
 
 ## Authors
-* **Michael Muturi** - [mikemuturi](https://github.com/mikemuturi)
-* **Joseph Onyach** - [jonyach] (https://github.com/jonyach)
+<!-- * **Michael Muturi** - [mikemuturi](https://github.com/mikemuturi) -->
+* **Joseph Onyach** - [jonyach](https://github.com/jonyach)
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?&style=plastic&logo=twitter&logoColor=white"/>](https://twitter.com/joseph_onyach)
 [<img src="https://img.shields.io/badge/Linkedin-0A66C2.svg?&style=plastic&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/joseph-onyach-46bbb9223/)
 [<img src="https://img.shields.io/badge/GitHub-181717.svg?&style=plastic&logo=github&logoColor=white"/>](https://github.com/jonyach)
