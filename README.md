@@ -79,7 +79,7 @@ $
 ```
 
 ## Authors
-<!-- * **Michael Muturi** - [mikemuturi](https://github.com/mikemuturi) -->
+* **Maxwell Owuor** - [Maxwellowuor254](https://github.com/Maxwellowuor254)
 * **Joseph Onyach** - [jonyach](https://github.com/jonyach)
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?&style=plastic&logo=twitter&logoColor=white"/>](https://twitter.com/joseph_onyach)
 [<img src="https://img.shields.io/badge/Linkedin-0A66C2.svg?&style=plastic&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/joseph-onyach-46bbb9223/)
