@@ -13,7 +13,6 @@ simple_shell
 Simple shell is a sample of shell with similar outputs
 
 
-
 .SH OVERVIEW
 simple_shell is a command line interpreter that works like the shell
 
@@ -48,4 +47,4 @@ No known bugs.
 .SH "SEE ALSO"
 
 .SH AUTHOR
-Yasmine hamdi, Ghofrane Abidi
+Maxwell Owuor, Joseph Onyach

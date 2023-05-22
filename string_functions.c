@@ -94,3 +94,4 @@ char *concat_all(char *s1, char *s2)
 
 	return (result);
 }
+

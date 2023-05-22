@@ -65,7 +65,7 @@ $ git clone https://github.com/jonyach/simple_shell.git
 ### Compilation
 You can compile the files using this command to check that there are no errors:
 ```
-$ gcc -Wall -pedantic -Werror Wextra *.c -o hsh
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 
 ### Running
