@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * strcat_cd - function that concatenates the message for cd error
+ * strcat_cd - functions tht prints the msg for cd err
  *
- * @datash: data relevant (directory)
- * @msg: message to print
- * @error: output message
+ * @datash: data relvnt (dir)
+ * @msg: msg to print
+ * @error: output msg
  * @ver_str: counter lines
  * Return: error message
  */
@@ -39,9 +39,9 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 }
 
 /**
- * error_get_cd - error message for cd command in get_cd
- * @datash: data relevant (directory)
- * Return: Error message
+ * error_get_cd - err msg 4 cd command in get_cd
+ * @datash: data relevant (dir)
+ * Return: Err msg
  */
 char *error_get_cd(data_shell *datash)
 {
@@ -78,9 +78,9 @@ char *error_get_cd(data_shell *datash)
 }
 
 /**
- * error_not_found - generic error message for command not found
+ * error_not_found - generic err msg 4 command not found
  * @datash: data relevant (counter, arguments)
- * Return: Error message
+ * Return: Err mssg
  */
 char *error_not_found(data_shell *datash)
 {
@@ -110,10 +110,10 @@ char *error_not_found(data_shell *datash)
 }
 
 /**
- * error_exit_shell - generic error message for exit in get_exit
+ * error_exit_shell - generic err msg for exit in get_exit
  * @datash: data relevant (counter, arguments)
  *
- * Return: Error message
+ * Return: Err mssg
  */
 char *error_exit_shell(data_shell *datash)
 {
