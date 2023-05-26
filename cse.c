@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * repeated_char - counts the repetitions of a char
+ * repeated_char - counts the no. of time repeating of a char
  *
- * @input: input string
+ * @input: in str
  * @i: index
- * Return: repetitions
+ * Return: repeting
  */
 int repeated_char(char *input, int i)
 {
@@ -16,9 +16,9 @@ int repeated_char(char *input, int i)
 }
 
 /**
- * error_sep_op - finds syntax errors
+ * error_sep_op - finding syntax errors
  *
- * @input: input string
+ * @input: in str
  * @i: index
  * @last: last char read
  * Return: index of error. 0 when there are no
@@ -69,9 +69,9 @@ int error_sep_op(char *input, int i, char last)
 }
 
 /**
- * first_char - finds index of the first char
+ * first_char - finding index of the 1st character
  *
- * @input: input string
+ * @input: in str
  * @i: index
  * Return: 1 if there is an error. 0 in other case.
  */
@@ -93,11 +93,11 @@ int first_char(char *input, int *i)
 }
 
 /**
- * print_syntax_error - prints when a syntax error is found
+ * print_syntax_error - printing when a syntax error is found
  *
- * @datash: data structure
- * @input: input string
- * @i: index of the error
+ * @datash: data struct
+ * @input: in str
+ * @i: indexing of the error
  * @bool: to control msg error
  * Return: no return
  */
@@ -147,10 +147,10 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 
 /**
  * check_syntax_error - intermediate function to
- * find and print a syntax error
+ * finding and printing a syntax error
  *
- * @datash: data structure
- * @input: input string
+ * @datash: data struct
+ * @input: in str
  * Return: 1 if there is an error. 0 in other case
  */
 int check_syntax_error(data_shell *datash, char *input)
