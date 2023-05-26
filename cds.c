@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * cd_dot - changes to the parent directory
+ * cd_dot - changing 2 the parent dir
  *
- * @datash: data relevant (environ)
+ * @datash: data rel (env)
  *
  * Return: no return
  */
@@ -52,10 +52,10 @@ void cd_dot(data_shell *datash)
 }
 
 /**
- * cd_to - changes to a directory given
+ * cd_to - changing 2 a dir given
  * by the user
  *
- * @datash: data relevant (directories)
+ * @datash: data relevant (dir)
  * Return: no return
  */
 void cd_to(data_shell *datash)
@@ -87,9 +87,9 @@ void cd_to(data_shell *datash)
 }
 
 /**
- * cd_previous - changes to the previous directory
+ * cd_previous - changing 2 the previous dir
  *
- * @datash: data relevant (environ)
+ * @datash: data relevant (env)
  * Return: no return
  */
 void cd_previous(data_shell *datash)
@@ -129,9 +129,9 @@ void cd_previous(data_shell *datash)
 }
 
 /**
- * cd_to_home - changes to home directory
+ * cd_to_home - changing 2 home dir
  *
- * @datash: data relevant (environ)
+ * @datash: data relevant (env)
  * Return: no return
  */
 void cd_to_home(data_shell *datash)
