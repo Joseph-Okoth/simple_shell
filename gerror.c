@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_error - calls the error according the builtin, syntax or permission
- * @datash: data structure that contains arguments
- * @eval: error value
- * Return: error
+ * get_error - calling the err accordance 2 the builtin, syntax or permission
+ * @datash: data struct that contains arg
+ * @eval: err val
+ * Return: err
  */
 int get_error(data_shell *datash, int eval)
 {
