@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strdup - duplicates a str in the heap memory.
- * @s: Type char pointer str
+ * _strdup - duplicating a str in the heap mem.
+ * @s: Type char pointer string
  * Return: duplicated str
  */
 char *_strdup(const char *s)
@@ -19,8 +19,8 @@ char *_strdup(const char *s)
 }
 
 /**
- * _strlen - Returns the lenght of a string.
- * @s: Type char pointer
+ * _strlen - Returns the len of a str.
+ * @s: Type char pnter
  * Return: Always 0.
  */
 int _strlen(const char *s)
@@ -34,8 +34,8 @@ int _strlen(const char *s)
 }
 
 /**
- * cmp_chars - compare chars of strings
- * @str: input string.
+ * cmp_chars - comparing chars of str
+ * @str: input str.
  * @delim: delimiter.
  *
  * Return: 1 if are equals, 0 if not.
@@ -61,8 +61,8 @@ int cmp_chars(char str[], const char *delim)
 }
 
 /**
- * _strtok - splits a string by some delimiter.
- * @str: input string.
+ * _strtok - spliting a str by some delimiter.
+ * @str: inpt str.
  * @delim: delimiter.
  *
  * Return: string splited.
@@ -111,10 +111,10 @@ char *_strtok(char str[], const char *delim)
 }
 
 /**
- * _isdigit - defines if string passed is a number
+ * _isdigit - defining if string passed is a no.
  *
- * @s: input string
- * Return: 1 if string is a number. 0 in other case.
+ * @s: input str
+ * Return: 1 if str is a no. 0 in other case.
  */
 int _isdigit(const char *s)
 {
