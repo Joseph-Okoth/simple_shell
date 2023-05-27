@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * is_cdir - checks ":" if is in the current directory.
- * @path: type char pointer char.
- * @i: type int pointer of index.
+ * is_cdir - checks ":" if is'in the current dir
+ * @path: type char pnter char.
+ * @i: type int pnter of index.
  * Return: 1 if the path is searchable in the cd, 0 otherwise.
  */
 int is_cdir(char *path, int *i)
@@ -23,10 +23,10 @@ int is_cdir(char *path, int *i)
 }
 
 /**
- * _which - locates a command
+ * _which - locating a cmmnd
  *
- * @cmd: command name
- * @_environ: environment variable
+ * @cmd: cmmnd name
+ * @_environ: env var
  * Return: location of the command.
  */
 char *_which(char *cmd, char **_environ)
@@ -73,10 +73,10 @@ char *_which(char *cmd, char **_environ)
 }
 
 /**
- * is_executable - determines if is an executable
+ * is_executable - deter if is an exec
  *
- * @datash: data structure
- * Return: 0 if is not an executable, other number if it does
+ * @datash: data struct
+ * Return: 0 if isn't an exec, other no. if it does
  */
 int is_executable(data_shell *datash)
 {
@@ -118,11 +118,11 @@ int is_executable(data_shell *datash)
 }
 
 /**
- * check_error_cmd - verifies if user has permissions to access
+ * check_error_cmd - verify if user has permsn 2 access
  *
- * @dir: destination directory
- * @datash: data structure
- * Return: 1 if there is an error, 0 if not
+ * @dir: destiny  dir
+ * @datash: data struct
+ * Return: 1 if there is an err, 0 if not
  */
 int check_error_cmd(char *dir, data_shell *datash)
 {
@@ -155,7 +155,7 @@ int check_error_cmd(char *dir, data_shell *datash)
 }
 
 /**
- * cmd_exec - executes command lines
+ * cmd_exec - executes cmmnd lines
  *
  * @datash: data relevant (args and input)
  * Return: 1 on success.
