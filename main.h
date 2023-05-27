@@ -16,14 +16,14 @@
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
 
-/* Points to an array of pointers to strings called the "environment" */
+/* Points to an arr of pointers to str called the "environment" */
 extern char **environ;
 
 
 /**
  * struct data - struct that contains all relevant data on runtime
- * @av: argument vector
- * @input: command line written by the user
+ * @av: arg vector
+ * @input: commnd line written by the user
  * @args: tokens of the command line
  * @status: last status of the shell
  * @counter: lines counter
