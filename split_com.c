@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * swap_char - swaps | and & 4 non-printed chars
- *
- * @input: inpt str
- * @bool: type of swap
- * Return: swapped str
+ * swap_char - swaps | nd & 4 non-printed characters
+ * @input: inpt string
+ * @bool: type of swapping
+ * Return: swappd string
  */
 char *swap_char(char *input, int bool)
 {
@@ -44,7 +43,7 @@ char *swap_char(char *input, int bool)
 }
 
 /**
- * add_nodes - add separating and command lines in the lists
+ * add_nodes - add separating nd cmmnd lines in the lists
  *
  * @head_s: head of separator list
  * @head_l: head of cmmnd lines list
